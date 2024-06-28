@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <div>
+        <h1 span style="text-align: center; color:white;">Вход</h1>
+        </div>
+    </head>
+    <body>
+        <div class="divisor">
+        <div class="qwerty">
+            <p><span style="color:white">Логин</span></p>
+        <input type="text" id="login"/>
+        <div>
+        <div class="qwerty1">
+            <p><span style="color:white">Пароль</span></p>
+        <input type="password" id="pass"/>
+        </div>
+        <div>
+            <button class="negro" id="enter">
+                <h><span style="color:white">Войти</span></h>
+            </button>
+        </div>
+    </body>
+    <style>html{background-color: rgb(86, 86, 86);}
+         .divisor {display: flex;text-align: center ;justify-content: center}
+         .negro{display: flex; justify-content: center; margin-left: 35%;}
+         .negro{
+            background-color:rgb(255, 99, 99);
+            box-shadow: 0px 0px 10px rgb(255, 99, 99);
+            font-size: 29px;
+            transition: 0.3s;
+            margin: 100px;
+            
+         }
+        .negro:hover {
+            background-color: black;
+            color: rgb(255, 99, 99);
+            box-shadow: 0px 0px 10px black;
+            font-size: 30px;
+           }
+    </style>
+    <script>
+        let usernameIN = document.getElementById("login")
+        let passwordIN = document.getElementById("pass")
+        let enterIN = document.getElementById("enter")
+
+        function enter() {if (usernameIN.value == "admin" && passwordIN.value == "123123") {window.open("index.html");} else {alert("Неправильный логин или пароль");}}
+
+        enterIN.onclick = enter;
+    </script>
+</html> 
